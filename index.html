@@ -98,22 +98,34 @@
           <div>
             <h3>Fale conosco</h3>
             <form id="contact-form">
-              <input type="text" id="nome" placeholder="Seu nome" required />
+              <input
+                type="text"
+                id="nome"
+                placeholder="Nome Completo"
+                required
+              />
+              <p class="error-message">O nome está inválido</p>
               <input
                 type="email"
                 id="email"
                 placeholder="Seu e-mail"
                 required
               />
-              <input type="tel" id="tel" placeholder="Seu telefone (opicional)" />
+              <input
+                type="tel"
+                id="tel"
+                placeholder="Seu telefone (opicional)"
+              />
               <textarea
                 placeholder="Sua mensagem"
                 id="message"
                 required
               ></textarea>
               <button type="submit" id="btn-submit">Enviar</button>
+              <button id="sucess-message"></button>
             </form>
           </div>
+
           <div>
             <h3>Nos acompanhe</h3>
             <ul class="social-links">

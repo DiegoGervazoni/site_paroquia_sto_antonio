@@ -144,6 +144,29 @@ footer {
   font-family: 'Roboto Mono', monospace;
 }
 
+#sucess-message {
+  background-color: #22c7c7;
+  padding: 1rem;
+  display: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  justify-items: center;
+}
 
+.error-message {
+  font-size: .75rem;
+  background-color: #e74c3c;
+  padding: .5rem;
+  color: #fff;
+  margin-bottom: .5rem;
+  display: none;
+}
 
+input.error {
+  color: #e74c3c;
+  border-color: #e74c3c;
+  outline-color: #e74c3c;
+}
 
