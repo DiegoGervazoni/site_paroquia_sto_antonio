@@ -14,6 +14,8 @@ form.addEventListener("submit", function (e) {
 
   const nome = document.getElementById("nome"); //Pegando o nome
   const email = document.getElementById("email"); //Pegando o email
+  const telefone = document.getElementById("tel"); //Pegando o telefone
+  const mensagem = document.getElementById("message"); //Pegando a mensagem
   const mensagemSucesso = `Obrigado ${nome.value}, pela sua mensagem! Em breve entraremos em contato com você através do seu e-mail ${email.value}`; //Pegando a mensagem de sucesso
 
   formValido = validaNome(nome.value); //Validando o formulário
@@ -23,6 +25,8 @@ form.addEventListener("submit", function (e) {
     alert(mensagemSucesso);
     nome.value = " ";
     email.value = " ";
+    telefone.value = " ";
+    mensagem.value = " ";
   } else {
     //Se o nome for inválido
     alert("Por favor, informe seu nome completo");
