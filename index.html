@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <title>EBAC Motors</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,9 +26,17 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="container">
+      <div class="container container-flex">
         <h1>Paróquia Santo Antônio</h1>
-        <nav>
+        <div class="menu-hamburguer">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <!-- Container de Exibicao -->
+      <nav>
+        <div class="container">
           <ul>
             <li>
               <a href="#about">História da Igreja</a>
@@ -26,9 +45,17 @@
               <a href="#contact">Contato</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
+
+    <!-- Carrosel de Imagens -->
+    <div id="carrosel-imagens">
+      <img
+        src="./images/sto-antonio.jpg"
+        alt="Vista panoramica da Paroquia Santo Antonio"
+      />
+    </div>
 
     <!-- Imagens -->
     <section id="about">
@@ -102,27 +129,26 @@
                 type="text"
                 id="nome"
                 placeholder="Nome Completo"
-                required
+                name="nome"
               />
-              <p class="error-message">O nome está inválido</p>
               <input
                 type="email"
                 id="email"
                 placeholder="Seu e-mail"
-                required
+                name="email"
               />
               <input
                 type="tel"
                 id="tel"
                 placeholder="Seu telefone (opicional)"
+                name="tel"
               />
               <textarea
                 placeholder="Sua mensagem"
                 id="message"
-                required
+                name="message"
               ></textarea>
               <button type="submit" id="btn-submit">Enviar</button>
-              <button id="sucess-message"></button>
             </form>
           </div>
 
@@ -172,5 +198,20 @@
       </div>
     </footer>
   </body>
-  <script src="./main.js"></script>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-3.4.1.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script src="./js/jquery.mask.min.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/messages_pt_BR.min.js"></script>
+  <script src="./js/main.js"></script>
 </html>
