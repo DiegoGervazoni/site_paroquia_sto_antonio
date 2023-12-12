@@ -76,6 +76,11 @@ nav li a {
   text-decoration: none;
 }
 
+#img-igreja {
+  max-width: 6rem;
+  object-fit: cover;
+}
+
 .menu-hamburguer {
   width: 2rem;
   cursor: pointer;
