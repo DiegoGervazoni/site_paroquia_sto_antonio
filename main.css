@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 html {
@@ -22,7 +21,7 @@ textarea {
 }
 
 header {
-  font-family: 'Whisper', cursive;
+  font-family: "Whisper", cursive;
   font-size: 2.2rem;
   position: sticky;
   top: 0;
@@ -148,7 +147,6 @@ section p {
   margin-right: 2rem;
 }
 
-
 form input,
 form textarea,
 form button {
@@ -197,7 +195,7 @@ footer {
   color: #000;
   padding: 1rem 0;
   text-align: center;
-  font-family: 'Whisper', cursive;
+  font-family: "Whisper", cursive;
   font-size: 2.2rem;
 }
 
@@ -207,4 +205,183 @@ footer {
   font-weight: bold;
   margin: 1rem 0;
   padding: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+  header,
+  footer {
+    flex-direction: column;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .arms-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container {
+    padding: 0 1rem;
+    max-width: 90%;
+  }
+
+  .menu-hamburguer {
+    display: none;
+  }
+
+  .nome-igreja {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .botao-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  button {
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  .submenu {
+    display: block;
+    width: 100%;
+    position: relative;
+    border: none;
+    padding: 0;
+  }
+
+  .menu {
+    display: none;
+    padding: 1rem;
+  }
+
+  nav li {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .contact-methods {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    display: block;
+    width: 18rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .church-front {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Estilos para telas com largura mínima de 768px e máxima de 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    padding: 0 2rem;
+  }
+
+  nav li {
+    display: block;
+    font-size: 1rem;
+    margin: 1rem;
+  }
+
+  .contact-methods {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .nome-igreja {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .botao-menu {
+    display: none;
+  }
+
+  .arms-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 9rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  .contact-methods {
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    display: block;
+    width: 28rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .endereco {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .church-front {
+    margin-left: 16rem;
+  }
+}
+
+/* Estilos para telas com largura mínima de 1024px */
+@media screen and (min-width: 1024px) {
+  .botao-menu {
+    display: none;
+  }
+
+  .church-front {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
 }

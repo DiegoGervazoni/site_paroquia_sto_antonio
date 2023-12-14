@@ -6,6 +6,10 @@ $(document).ready(function () {
     $("nav").slideToggle(); //abre e fecha o menu
   });
 
+  $(".botao-menu button").click(function () {
+    $(".menu").slideToggle();
+  });
+
   $("form").validate({
     rules: {
       nome: {

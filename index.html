@@ -2,7 +2,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,17 +23,22 @@
     <header>
       <div class="container container-flex">
         <img src="./images/logo-igreja.png" alt="Logo igreja" id="img-igreja">
-        <h1>Paróquia Santo Antônio</h1>
+        <h1 class="nome-igreja">Paróquia Santo Antônio</h1>
         <div class="menu-hamburguer">
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
+
+      <div class="botao-menu">
+        <button type="button">Abrir Menu</button>
+      </div>
+
       <!-- Container de Exibicao -->
-      <nav>
+      <nav class="submenu">
         <div class="container">
-          <ul>
+          <ul class="menu">
             <li>
               <a href="#about">História da Igreja</a>
             </li>
@@ -172,7 +177,7 @@
               </li>
             </ul>
           </div>
-          <div>
+          <div class="endereco">
             <h3>Venham nos visitar!</h3>
             <p>Rua Ribeiro de Barros, 272 - Centro | Itapira - SP</p>
           </div>
@@ -186,6 +191,13 @@
       </div>
     </footer>
   </body>
+
+  <!-- Scripts -->
+  <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
   <script
     type="text/javascript"
     src="https://code.jquery.com/jquery-3.7.0.min.js"
