@@ -1,379 +1,171 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  font-family: Roboto, sans-serif;
 }
 
-section h2,
-section h3 {
-  font-family: "Roboto Mono", monospace;
-  font-weight: normal;
-  margin-bottom: 1rem;
+.navbar {
+  background-color: #fff;
 }
 
-body,
-input,
-textarea {
-  font-family: "Montserrat", sans-serif;
+#cabecalho .nav .nav-link.active {
+  background-color: #add8e6;
+  color: #2929ce;
 }
 
-header {
-  font-family: "Whisper", cursive;
-  font-size: 2.2rem;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-header,
-footer {
-  padding: 1rem 0;
-  background: linear-gradient(0, #f0f1f1, #ffffff);
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-missa .nav-link.active:hover {
   color: #000;
-  border-bottom: 2px solid #8b8686;
 }
 
-.container-flex {
-  display: flex;
+.navbar-toggler {
+  background-color: #ffeae6;
 }
 
-.container {
-  max-width: 64rem;
+.section-title {
+  font-family: Pacifico, cursive;
+}
+
+.carousel-item img {
+  height: 100vh;
   width: 100%;
-  margin: 0 auto;
-}
-
-header > .container,
-footer .container {
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
-}
-
-nav {
-  background: linear-gradient(0, #dddfdf, #c4c1c1);
-  padding: 2rem 0;
-  display: none;
-  text-align: center;
-  font-family: "Roboto Mono", monospace;
-  margin-bottom: 2rem;
-}
-
-nav li {
-  list-style: none;
-  display: inline;
-  font-size: 1.125rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-right: 1rem;
-}
-
-nav li a {
-  color: #000;
-  text-decoration: none;
-}
-
-#img-igreja {
-  max-width: 6rem;
   object-fit: cover;
 }
 
-.menu-hamburguer {
-  width: 2rem;
-  cursor: pointer;
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: -50%;
+  z-index: 5;
+  display: inline-block;
 }
 
-.menu-hamburguer span {
-  height: 0.125rem;
-  width: 100%;
-  display: block;
-  background-color: #000080;
-  margin-bottom: 0.25rem;
+.carousel-control-prev {
+  left: 0;
 }
 
-section {
-  padding: 3rem 0;
-  margin: 2rem 0;
-  color: #000;
+.carousel-control-next {
+  right: 0;
 }
 
-.arms-list img {
-  height: 4rem;
-  margin-top: 4rem;
+#sobre-a-paroquia,
+#missa {
+  background-color: #cfc5c2;
 }
 
-.arms-list li {
-  display: inline;
-  margin-right: 1.5rem;
-  margin-top: 3rem;
-  padding: 1rem;
+.text-colored {
+  color: #2929ce;
 }
 
-section .container {
-  align-items: flex-start;
+.nav-missa .nav-link.active,
+#fale-conosco button {
+  background-color: #2929ce;
+  color: #fff;
 }
 
-section p {
-  margin-bottom: 0.5rem;
-  line-height: 2rem;
-}
-
-#contact .container {
-  display: block;
-}
-
-.contact-methods {
-  display: flex;
-  justify-content: space-between;
-}
-
-.church-front {
-  margin-right: 2rem;
-}
-
-form input,
-form textarea,
-form button {
-  display: block;
-  width: 20rem;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem;
-}
-
-form textarea {
-  resize: none;
-  height: 11.25rem;
-}
-
-form button {
-  background-color: #22c7c7;
-  color: #000;
-  border: none;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #c4e9e9;
-}
-
-input:focus,
-textarea:focus {
-  outline-color: #22c7c7;
-}
-
-.social-links img {
-  height: 1.5rem;
+.nav-missa .nav-link:hover {
+  color: #2929ce;
 }
 
 .social-links li {
+  list-style: none;
   display: inline;
-  margin-right: 0.5rem;
 }
 
-.social-links li a {
+.social-links a {
   text-decoration: none;
 }
 
-footer {
-  background: linear-gradient(0, #dddfdf, #ffffff);
-  color: #000;
-  padding: 1.5rem 0;
-  border-top: 2px solid #8b8686;
-}
-
 .campoErrado {
-  color: rgb(0, 0, 139);
+  color: rgb(208, 60, 38);
   font-size: 1rem;
-  font-weight: bold;
-  margin: 1rem 0;
+}
+
+.btn-more {
+  color: #fff;
+  margin: 0;
+  border: 0;
+  background-color: #2929ce;
+  box-shadow: 0 0 10px rgba(41, 41, 206, 0.6);
+  width: 20%;
+}
+
+.btn-more:hover {
+  color: #fff;
+  background-color: #1c1c99; /* um tom mais escuro de #2929ce para o hover */
+  box-shadow: 0 0 10px rgba(28, 28, 153, 0.8);
+}
+
+#cabecalho .container img {
+  height: 175px;
+  object-fit: cover;
+}
+
+#clero .container img {
+  height: 300px;
+  object-fit: cover;
+}
+
+#missa .container img {
+  height: 200px;
+  object-fit: cover;
+}
+
+#fale-conosco .container img {
+  height: 60px;
+  object-fit: cover;
+}
+
+#mensagem {
+  resize: none;
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 0.75rem;
+  border: 12px;
   padding: 1rem;
-}
-
-.paragrafo-footer {
-  font-weight: bold;
   text-align: center;
-  font-family: "Whisper", cursive;
-  font-size: 2.2rem;
-  margin-top: 2rem;
+  border-top: 2px solid #2929ce;
+  font-family: Pacifico, cursive;
 }
 
-@media screen and (max-width: 767px) {
-  header,
-  footer {
-    flex-direction: column;
+footer p a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #2929ce;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 17.5rem;
   }
 
-  html,
-  body {
-    overflow-x: hidden;
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: -86%;
+    z-index: 5;
+    display: inline-block;
   }
 
-  .arms-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .btn-more {
+    color: #fff;
+    margin: 0;
+    border: 0;
+    background-color: #2929ce;
+    box-shadow: 0 0 10px rgba(41, 41, 206, 0.6);
+    width: 40%;
   }
 
-  .container {
-    padding: 0 1rem;
-    max-width: 90%;
+  .section-title {
+    font-family: Pacifico, cursive;
+    margin-top: 1.3rem;
   }
 
-  .menu-hamburguer {
-    display: none;
-  }
-
-  .nome-igreja {
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  .botao-menu {
-    display: flex;
-    justify-content: center;
+  #missa .container img {
     margin-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  button {
-    padding: 1rem;
-    font-size: 1rem;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-  }
-
-  .submenu {
-    display: block;
-    width: 100%;
-    position: relative;
-    border: none;
-    padding: 0;
-  }
-
-  .menu {
-    display: none;
-    padding: 1rem;
-  }
-
-  nav li {
-    display: block;
-    margin-bottom: 1rem;
-  }
-
-  h2 {
-    text-align: center;
-  }
-
-  h3 {
-    text-align: center;
-  }
-
-  .contact-methods {
-    margin: 1rem 0 1rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  form input,
-  form textarea,
-  form button {
-    display: block;
-    width: 18rem;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-  }
-
-  .church-front {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-/* Estilos para telas com largura mínima de 768px e máxima de 1023px */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    padding: 0 2rem;
-  }
-
-  nav li {
-    display: block;
-    font-size: 1rem;
-    margin: 1rem;
-  }
-
-  .contact-methods {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .nome-igreja {
-    text-align: center;
-    font-size: 3rem;
-  }
-
-  .botao-menu {
-    display: none;
-  }
-
-  .arms-list {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 9rem;
-  }
-
-  h2 {
-    text-align: center;
-  }
-
-  h3 {
-    text-align: center;
-  }
-
-  .contact-methods {
-    margin: 1rem 0 1rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  form input,
-  form textarea,
-  form button {
-    display: block;
-    width: 28rem;
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-  }
-
-  .endereco {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-  }
-
-  .church-front {
-    margin-left: 16rem;
-  }
-}
-
-/* Estilos para telas com largura mínima de 1024px */
-@media screen and (min-width: 1024px) {
-  .botao-menu {
-    display: none;
-  }
-
-  .church-front {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
   }
 }
