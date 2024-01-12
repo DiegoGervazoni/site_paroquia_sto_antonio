@@ -11,9 +11,12 @@ body {
   color: #2929ce;
 }
 
-#cabecalho .nav .nav-link,
-.nav-missa .nav-link.active:hover {
+#cabecalho .nav .nav-link {
   color: #000;
+}
+
+.nav-missa .nav-link.active:hover {
+  color: #fff;
 }
 
 .navbar-toggler {
@@ -141,7 +144,11 @@ body {
 }
 
 .nav-link.active {
-  background-color: #f8f9fa; 
+  background-color: #f8f9fa;
+}
+
+#fale-conosco .container .social-links .icons-social {
+  font-size: 1.8rem;
 }
 
 footer {
@@ -205,4 +212,5 @@ footer p a {
     background-color: rgba(88, 85, 172, 0.9);
     box-shadow: rgba(94, 61, 193, 0.9) 2px 2px 2.2px;
   }
+
 }
