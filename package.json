@@ -1,0 +1,15 @@
+{
+  "name": "projeto-pessoal-santo-antonio",
+  "version": "1.0.0",
+  "description": "- Exercício proposto pela EBAC para a criação de um site com HTML5, CSS3 e JQUery.\r - Refatoração do projeto com implementação do Bootstrap, responsividade nova no CSS e JQuery atualizado",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
