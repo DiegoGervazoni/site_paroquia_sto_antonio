@@ -1,6 +1,7 @@
 # Site - Paróquia de Santo Antônio de Itapira/SP
 ## Exercício HTML e CSS
-- Exercício proposto pela EBAC para a criação de um site com HTML5, CSS3 e JQUery.
+- Projeto pessoal feito com intuito de aprimorar meus conhecimentos e também exercitar a caridade, pois todo o projeto será doado quando estiver disponível;
+- Feito em HTML, CSS, Bootstrap e JQuery;
 - Refatoração do projeto com implementação do Bootstrap, responsividade nova no CSS e JQuery atualizado
 - Instalação do automatizador de tarefas Gulp e suas dependências;
 - Instalação do SASS;
