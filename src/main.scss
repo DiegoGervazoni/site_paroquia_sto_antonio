@@ -2,6 +2,13 @@
 @use 'config/fonts';
 @use 'config/carousel-size';
 
+@mixin image-size($height){
+ img {
+  height: $height;
+  object-fit: cover;
+ }
+}
+
 body {
   font-family: fonts.$body-font;
 }
@@ -23,10 +30,7 @@ body {
   }
 
   .container {
-    img {
-      height: 10.938rem;
-      object-fit: cover;
-    }
+    @include image-size(10.938rem);
   }
 }
 
@@ -126,28 +130,19 @@ body {
 
 #clero {
   .container {
-    img {
-      height: 18.75rem;
-      object-fit: cover;
-    }
+    @include image-size(18.75rem);
   }
 }
 
 #missa {
   .container {
-    img {
-      height: 12.5rem;
-      object-fit: cover;
-    }
+    @include image-size(12.5rem);
   }
 }
 
 #fale-conosco {
   .container {
-    img {
-      height: 3.75rem;
-      object-fit: cover;
-    }
+    @include image-size(3.75rem);
 
     .social-links {
       .icons-social {
