@@ -1,41 +1,24 @@
-$body-font: Roboto, sans-serif;
-$navbar-bg: #fff;
-$active-link-bg: #add8e6;
-$active-link-color: #2929ce;
-$link-color: #000;
-$toggler-bg: #ffeae6;
-$section-title-font: Pacifico, cursive;
-$carousel-img-height: 100vh;
-$carousel-img-width: 100%;
-$carousel-control-z-index: 5;
-$section-bg: #cfc5c2;
-$text-color: #2929ce;
-$error-color: rgb(208, 60, 38);
-$btn-more-bg: #2929ce;
-$btn-more-hover-bg: #1c1c99;
-$btn-more-shadow: 0 0 10px rgba(41, 41, 206, 0.6);
-$btn-more-hover-shadow: 0 0 10px rgba(28, 28, 153, 0.8);
-$footer-border-top: 2px solid #2929ce;
-$footer-font: Pacifico, cursive;
-$footer-link-font-size: 1.4rem;
+@use "config/colors";
+@use 'config/fonts';
+@use 'config/carousel-size';
 
 body {
-  font-family: $body-font;
+  font-family: fonts.$body-font;
 }
 
 .navbar {
-  background-color: $navbar-bg;
+  background-color: colors.$navbar-bg;
 }
 
 #cabecalho {
   .nav {
     .nav-link {
       &.active {
-        background-color: $active-link-bg;
-        color: $active-link-color;
+        background-color: colors.$active-link-bg;
+        color: colors.$active-link-color;
       }
 
-      color: $link-color;
+      color: colors.$link-color;
     }
   }
 
@@ -54,23 +37,23 @@ body {
     }
 
     &:hover {
-      color: $text-color;
+      color: colors.$text-color;
     }
   }
 }
 
 .navbar-toggler {
-  background-color: $toggler-bg;
+  background-color: colors.$toggler-bg;
 }
 
 .section-title {
-  font-family: $section-title-font;
+  font-family: fonts.$section-title-font;
 }
 
 .carousel-item {
   img {
-    height: $carousel-img-height;
-    width: $carousel-img-width;
+    height: carousel-size.$carousel-img-height;
+    width: carousel-size.$carousel-img-width;
     object-fit: cover;
   }
 }
@@ -79,7 +62,7 @@ body {
 .carousel-control-next {
   position: absolute;
   top: -50%;
-  z-index: $carousel-control-z-index;
+  z-index: carousel-size.$carousel-control-z-index;
   display: inline-block;
 }
 
@@ -93,18 +76,18 @@ body {
 
 #sobre-a-paroquia,
 #missa {
-  background-color: $section-bg;
+  background-color: colors.$section-bg;
 }
 
 .text-colored {
-  color: $text-color;
+  color: colors.$text-color;
 }
 
 .nav-missa {
   .nav-link {
     &.active,
     #fale-conosco button {
-      background-color: $text-color;
+      background-color: colors.$text-color;
       color: #fff;
     }
   }
@@ -122,7 +105,7 @@ body {
 }
 
 .campoErrado {
-  color: $error-color;
+  color: colors.$error-color;
   font-size: 1rem;
 }
 
@@ -130,14 +113,14 @@ body {
   color: #fff;
   margin: 0;
   border: 0;
-  background-color: $btn-more-bg;
-  box-shadow: $btn-more-shadow;
+  background-color: colors.$btn-more-bg;
+  box-shadow: colors.$btn-more-shadow;
   width: 20%;
 
   &:hover {
     color: #fff;
-    background-color: $btn-more-hover-bg;
-    box-shadow: $btn-more-hover-shadow;
+    background-color: colors.$btn-more-hover-bg;
+    box-shadow: colors.$btn-more-hover-shadow;
   }
 }
 
@@ -214,15 +197,71 @@ footer {
   border: 12px;
   padding: 1rem;
   text-align: center;
-  border-top: $footer-border-top;
-  font-family: $footer-font;
+  border-top: colors.$footer-border-top;
+  font-family: fonts.$footer-font;
 
   p {
     a {
-      font-size: $footer-link-font-size;
+      font-size: fonts.$footer-link-font-size;
       text-decoration: none;
-      color: $text-color;
+      color: colors.$text-color;
     }
   }
 }
 
+@media (max-width: 768px) {
+  .carousel-item {
+    img {
+      height: 17.5rem;
+    }
+  }
+
+  #cabecalho {
+    .container {
+      img {
+        height: 5.7rem;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      position: absolute;
+      top: -86%;
+      z-index: carousel-size.$carousel-control-z-index;
+      display: inline-block;
+    }
+
+    .btn-more {
+      color: #fff;
+      margin: 0;
+      border: 0;
+      background-color: colors.$btn-more-bg;
+      box-shadow: colors.$btn-more-shadow;
+      width: 40%;
+    }
+
+    .section-title {
+      font-family: fonts.$section-title-font;
+      margin-top: 1.3rem;
+    }
+
+    #missa {
+      .container {
+        img {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    #myBtn {
+      &:hover {
+        background-color: rgba(88, 85, 172, 0.9);
+        box-shadow: rgba(94, 61, 193, 0.9) 2px 2px 2.2px;
+      }
+    }
+  }
+}

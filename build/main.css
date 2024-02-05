@@ -144,4 +144,60 @@ body {
   background-color: #f8f9fa;
 }
 
+footer {
+  width: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 0.75rem;
+  border: 12px;
+  padding: 1rem;
+  text-align: center;
+  border-top: 2px solid #2929ce;
+  font-family: Pacifico, cursive;
+}
+footer p a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #2929ce;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 17.5rem;
+  }
+  #cabecalho .container img {
+    height: 5.7rem;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #cabecalho .carousel-control-prev,
+  #cabecalho .carousel-control-next {
+    position: absolute;
+    top: -86%;
+    z-index: 5;
+    display: inline-block;
+  }
+  #cabecalho .btn-more {
+    color: #fff;
+    margin: 0;
+    border: 0;
+    background-color: #2929ce;
+    box-shadow: 0 0 10px rgba(41, 41, 206, 0.6);
+    width: 40%;
+  }
+  #cabecalho .section-title {
+    font-family: Pacifico, cursive;
+    margin-top: 1.3rem;
+  }
+  #cabecalho #missa .container img {
+    margin-top: 1rem;
+  }
+  #cabecalho #myBtn:hover {
+    background-color: rgba(88, 85, 172, 0.9);
+    box-shadow: rgba(94, 61, 193, 0.9) 2px 2px 2.2px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
