@@ -1,5 +1,5 @@
 # Site - Paróquia de Santo Antônio de Itapira/SP
-## Exercício HTML e CSS
+## Criação e implementação de um website.
 - Projeto pessoal feito com intuito de aprimorar meus conhecimentos e também exercitar a caridade, pois todo o projeto será doado quando estiver disponível;
 - Feito em HTML, CSS, Bootstrap e JQuery;
 - Refatoração do projeto com implementação do Bootstrap, responsividade nova no CSS e JQuery atualizado
