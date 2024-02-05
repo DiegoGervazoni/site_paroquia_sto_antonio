@@ -30,7 +30,7 @@ body {
   }
 
   .container {
-    @include image-size(10.938rem);
+    @include image-size(9.938rem);
   }
 }
 
@@ -119,7 +119,7 @@ body {
   border: 0;
   background-color: colors.$btn-more-bg;
   box-shadow: colors.$btn-more-shadow;
-  width: 20%;
+  width: 8rem;
 
   &:hover {
     color: #fff;
