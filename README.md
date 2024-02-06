@@ -9,3 +9,9 @@
 - Implementação do SASS;
 - Criação das variaveis na pasta source;
 - Refatoração do SASS e implementação na pasta main.scss das variaveis na pasta src/config;
+- Realocação dos arquivos na pasta build e alteração do nome da pasta "src" para "source";
+- Criação da lógica e chamadas na pasta gulpfile.js;
+- Compressão do arquivo css;
+- Alocação da observancia do gulp-sass com o watch;
+- Realocação do arquivo index.html para a pasta build;
+- Realocação dos arquivos em scss, dentro da pasta source/styles;
