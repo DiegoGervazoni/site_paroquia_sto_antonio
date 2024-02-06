@@ -1,13 +1,13 @@
-@use "config/colors";
-@use 'config/fonts';
-@use 'config/carousel-size';
-@use 'config/mobile-responsive';
+@use "colors";
+@use "fonts";
+@use "carousel-size";
+@use "mobile-responsive";
 
-@mixin image-size($height){
- img {
-  height: $height;
-  object-fit: cover;
- }
+@mixin image-size($height) {
+  img {
+    height: $height;
+    object-fit: cover;
+  }
 }
 
 body {
