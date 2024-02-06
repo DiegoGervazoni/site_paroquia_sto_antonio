@@ -28,19 +28,30 @@ function compilaSass() {
       })
     )
     .pipe(sourcemaps.write("./maps"))
-    .pipe(gulp.dest(".build/styles"));
+    .pipe(gulp.dest("./build/styles"));
 }
 
 exports.sass = compilaSass;
-exports.watch = function () {
+exports.default = function () {
   gulp.watch(
-    "./soruce/styles/*scss",
+    "./source/styles/*scss",
     {
       ignoreInitial: false,
     },
     gulp.series(compilaSass)
   );
+  gulp.watch(
+    "./source/scripts/*.js",
+    {
+      ignoreInitial: false,
+    },
+    gulp.series(comprimeJavaScript)
+  );
+  gulp.watch(
+    "./source/images/*",
+    {
+      ignoreInitial: false,
+    },
+    gulp.series(comprimeImagens)
+  );
 };
-
-exports.javascript = comprimeJavaScript;
-exports.images = comprimeImagens;
