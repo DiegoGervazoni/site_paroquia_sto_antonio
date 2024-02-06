@@ -14,10 +14,6 @@ body {
   font-family: fonts.$body-font;
 }
 
-.navbar {
-  background-color: colors.$navbar-bg;
-}
-
 #cabecalho {
   .nav {
     .nav-link {
@@ -33,6 +29,10 @@ body {
   .container {
     @include image-size(9.938rem);
   }
+}
+
+.navbar {
+  background-color: colors.$navbar-bg;
 }
 
 .nav-missa {
