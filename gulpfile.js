@@ -11,6 +11,7 @@ function comprimeImagens() {
     .pipe(gulp.dest("./build/images"));
 }
 
+
 function comprimeJavaScript() {
   return gulp
     .src("./source/scripts/*.js")
