@@ -55,3 +55,4 @@ exports.default = function () {
     gulp.series(comprimeImagens)
   );
 };
+
