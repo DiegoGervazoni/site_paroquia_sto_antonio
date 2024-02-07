@@ -1,4 +1,4 @@
-# Site - Paróquia de Santo Antônio de Itapira/SP
+# site_paroquia_sto_antonio
 ## Criação e implementação de um website.
 - Projeto pessoal feito com intuito de aprimorar meus conhecimentos e também exercitar a caridade, pois todo o projeto será doado quando estiver disponível;
 - Feito em HTML, CSS, Bootstrap e JQuery;
