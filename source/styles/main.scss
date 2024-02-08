@@ -205,7 +205,7 @@ footer {
   }
 }
 
-@media (max-width: mobile-responsive.$mobile) {
+@media screen and (max-width: mobile-responsive.$mobile) {
   .carousel-item {
     img {
       height: 17.5rem;
@@ -222,7 +222,9 @@ footer {
         margin-right: auto;
       }
     }
+  }
 
+  #carousel {
     .carousel-control-prev,
     .carousel-control-next {
       position: absolute;
@@ -230,34 +232,34 @@ footer {
       z-index: carousel-size.$carousel-control-z-index;
       display: inline-block;
     }
+  }
 
-    .btn-more {
-      color: #fff;
-      margin: 0;
-      border: 0;
-      background-color: colors.$btn-more-bg;
-      box-shadow: colors.$btn-more-shadow;
-      width: 40%;
-    }
+  .btn-more {
+    color: #fff;
+    margin: 0;
+    border: 0;
+    background-color: colors.$btn-more-bg;
+    box-shadow: colors.$btn-more-shadow;
+    width: 40%;
+  }
 
-    .section-title {
-      font-family: fonts.$section-title-font;
-      margin-top: 1.3rem;
-    }
+  .section-title {
+    font-family: fonts.$section-title-font;
+    margin-top: 1.3rem;
+  }
 
-    #missa {
-      .container {
-        img {
-          margin-top: 1rem;
-        }
+  #missa {
+    .container {
+      img {
+        margin-top: 1rem;
       }
     }
+  }
 
-    #myBtn {
-      &:hover {
-        background-color: rgba(88, 85, 172, 0.9);
-        box-shadow: rgba(94, 61, 193, 0.9) 2px 2px 2.2px;
-      }
+  #myBtn {
+    &:hover {
+      background-color: rgba(88, 85, 172, 0.9);
+      box-shadow: rgba(94, 61, 193, 0.9) 2px 2px 2.2px;
     }
   }
 }
