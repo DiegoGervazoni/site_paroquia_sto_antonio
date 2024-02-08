@@ -31,22 +31,12 @@ function compilaSass() {
     .pipe(gulp.dest("./build/styles"));
 }
 
-// Nova função para copiar arquivos HTML
-function html() {
-  return gulp
-    .src("./source/*.html")
-    .pipe(gulp.dest("./build"));
-}
-
 exports.sass = compilaSass;
-exports.html = html; // Exporte a nova função
 
-// Adicione a tarefa 'html' à tarefa 'build'
-exports.build = gulp.series(compilaSass, comprimeJavaScript, comprimeImagens, html);
+exports.build = gulp.series(compilaSass, comprimeJavaScript, comprimeImagens);
 
 exports.default = function () {
   gulp.watch("./source/styles/*.scss", gulp.series(compilaSass));
   gulp.watch("./source/scripts/*.js", gulp.series(comprimeJavaScript));
   gulp.watch("./source/images/*", gulp.series(comprimeImagens));
-  gulp.watch("./source/*.html", gulp.series(html)); // Adicione um watcher para arquivos HTML
 };
