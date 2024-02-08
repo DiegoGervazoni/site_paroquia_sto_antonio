@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paróquia Santo Antônio - Itapira</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css
+  "
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="../build/styles/main.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg sticky-top p-0 m-0" id="cabecalho">
+      <div class="container">
+        <img src="images/paroquia.jpeg" alt="Logo paróquia" />
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-navegacao"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav
+          class="navbar-collapse collapse justify-content-end"
+          id="menu-navegacao"
+        >
+          <ul class="nav nav-pills d-block d-md-flex">
+            <li class="nav-item fw-bold">
+              <a href="#sobre-a-paroquia" class="nav-link">
+                <i class="bi bi-house-door me-1"></i>
+                Sobre a Paróquia
+              </a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#clero" class="nav-link">
+                <i class="bi bi-plus-square-fill"></i>
+                Padres & Diácono
+              </a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#missa" class="nav-link">
+                <i class="bi bi-card-text me-1"></i>
+                Santa Missa & Catequese
+              </a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#fale-conosco" class="nav-link">
+                <i class="bi bi-chat-left-text me-1"></i>
+                Fale Conosco
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Carousel -->
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#cabecalho"
+      data-bs-smooth-scroll="true"
+    >
+      <section id="sobre-a-paroquia">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="images/lucernario-amplo.jpg" alt="Lucernario" />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="images/lucernario.jpg" alt="Lucernario velas" />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="images/paroquia-santo-antonio.jpg" alt="Paroquia" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              class="active"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <div class="pt-5 pb-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-5">
+                  <img
+                    src="images/paroquia-santo-antonio.jpg"
+                    alt=""
+                    class="d-block w-100 rounded"
+                  />
+                </div>
+                <div class="col-md-7 mt-3 mt-md-0">
+                  <h2 class="section-title">
+                    Sobre <span class="text-colored">a Paróquia</span>
+                  </h2>
+                  <p>
+                    A construção da Igreja de Santo Antônio, na cidade de
+                    Itapira, não teria sido possível se a comunidade religiosa
+                    não tivesse colaborado de forma tão assídua. Mas, é preciso
+                    lembrar também que nasceu da dedicação, do esforço e da
+                    vontade do Cônego Matheus Ruiz Domingues, um espanhol
+                    nascido em Polopos, província de Granada, e que veio para o
+                    Brasil aos oito anos de idade, onde em 1939 ingressou no
+                    Seminário do Ipiranga, em São Paulo, sendo ordenado
+                    sacerdote em 1945. Anos mais tarde, em 1958 foi nomeado
+                    Vigário da Igreja de Santo Antônio, em Itapira...
+                  </p>
+                  <button type="button" class="btn btn-more">Saiba mais</button>
+                  <h3 class="section-title pt-5">
+                    História de
+                    <span class="text-colored">Santo Antônio de Pádua</span>
+                  </h3>
+                  <p>
+                    Santo António nasceu em Lisboa em data incerta, numa casa,
+                    assim se pensa, próxima da Sé, às portas da cidade, no local
+                    onde posteriormente se ergueu a igreja que lhe foi dedicada.
+                    A tradição indica 15 de agosto de 1195, mas não há documento
+                    fidedigno que confirme esta data. Também foi proposto o ano
+                    de 1191, mas, segundo um seu biógrafo, o padre Fernando
+                    Lopes, as contradições em sua cronologia só se resolveriam
+                    se ele tivesse nascido em torno de 1188. Tampouco se sabe
+                    quem foram seus pais. Nenhuma das biografias primitivas os
+                    nomeiam, e deles só se sabe, sem uma segurança definitiva,
+                    que viviam em boa condição económica e eram plebeus. Somente
+                    no século XIV, a partir de tradições orais, é que se começou
+                    a atribuir ao pai o nome de Martim ou Martinho de Bulhões, e
+                    à mãe, o de Maria Teresa Taveira. Que seu pai se chamasse
+                    Martinho ou Martim, parece ser verdade, pois o obituário de
+                    São Vicente de Fora recorda o falecimento de uma irmã do
+                    taumaturgo que era freira e que atendia pelo nome de Maria
+                    Martini ou Martins, que de acordo com as regras da
+                    onomástica da época deve ser interpretado como "Maria filha
+                    de Martinho"...
+                  </p>
+                  <button type="button" class="btn btn-more">Saiba mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section - Clero -->
+      <section id="clero" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center">
+              <span class="text-colored">Padres</span> &
+              <span class="text-colored">Diácono</span>
+            </h2>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <img
+                src="images/padre-tarlei.jpg"
+                alt=""
+                class="d-block w-100 rounded mb-2"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-plus-square-fill"></i>
+                Padre Tarlei Navarro Pádua Souza
+              </h3>
+              <p>
+                Padre Tarlei nasceu em São José do Rio Preto – SP, no dia 22 de
+                setembro de 1978, filho de Marlene Navarro de Pádua Souza e
+                Adhemar Cezário de Pádua Souza. Foi batizado no dia 24 de maio
+                de 1980, na Paróquia São Sebastião, de Cardoso – SP, e crismado
+                em 18 de dezembro de 2004, na Paróquia São José, de Mogi Mirim –
+                SP. Cursou Filosofia no Instituto Superior de Filosofia e
+                Ciências Religiosas São Boaventura, residindo no Seminário de
+                Filosofia da Diocese de Santo Amaro, em São Paulo, e Teologia na
+                Pontifícia Universidade Católica de Campinas, residindo no
+                Seminário São José da Diocese de Amparo. Foi ordenado diácono no
+                dia 08 de dezembro de 2004, na Matriz de Santa Maria, em
+                Jaguariúna, e sacerdote no dia 17 de junho de 2005, na Matriz de
+                São José, em Mogi Mirim.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="images/padre-edgar.jpeg"
+                alt=""
+                class="d-block w-100 rounded mb-2"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-plus-square-fill"></i>
+                Padre Edgar de Barros Briozo
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                ducimus laudantium doloribus maiores quo architecto tempora odio
+                recusandae non, cum nesciunt consectetur quas incidunt magni
+                dignissimos dolor, dolorem officia amet! Dolorem quod
+                necessitatibus tenetur, quisquam, recusandae dolores nam
+                veritatis ipsa libero sequi vero doloremque eaque ea praesentium
+                facilis incidunt id! Repudiandae quia consequatur voluptates,
+                corporis officia deserunt fuga dolor possimus.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="images/diacono-nivaldo.jpg"
+                alt=""
+                class="d-block w-100 rounded mb-2"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-plus-square-fill"></i>
+                Diácono Nivaldo Bonomelli
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                maiores similique excepturi laudantium atque perspiciatis
+                tempora ratione omnis odit totam enim placeat sapiente odio vel
+                quibusdam repudiandae dolorum molestiae voluptatem facilis et,
+                ad neque doloribus expedita. Deleniti, porro. Sed numquam maxime
+                accusamus quas ad labore, autem earum commodi laudantium vel cum
+                cumque iste? Omnis aspernatur quia sequi reprehenderit ab
+                exercitationem?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section - Santa Missa -->
+      <section id="missa" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center mb-5">
+              <span class="text-colored">Santa Missa</span> &
+              <span class="text-colored">Catequese</span>
+            </h2>
+          </div>
+          <div class="row">
+            <aside class="col-md-2">
+              <nav class="nav nav-pills flex-column nav-missa">
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#santa-missa"
+                  class="fw-bold text-start nav-link text-colored active"
+                >
+                  Santa Missa - Horários
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#catequese-infantil"
+                  class="fw-bold text-start nav-link text-colored"
+                >
+                  Grupo de Catequese Infantil
+                </button>
+                <button
+                  type="button"
+                  data-bs-toggle="tab"
+                  data-bs-target="#crisma"
+                  class="fw-bold text-start nav-link text-colored"
+                >
+                  Grupo de Crisma
+                </button>
+              </nav>
+            </aside>
+            <div class="col-md-10">
+              <div class="tab-content">
+                <div class="tab-pane active" id="santa-missa">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="images/missa-saude.jpg"
+                        alt="Missa da Saúde"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                        Terça-feira - Missa da Saúde
+                      </h5>
+                      <p>
+                        Missa da saúde realizada na Paróquia Santo Antônio,
+                        todas as terças-feiras às 19h00.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="images/terco-dos-homens.jpg"
+                        alt="Terço dos Homens"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                        Quarta-feira - Terço dos Homens
+                      </h5>
+                      <p>
+                        Terço dos homens, realizado na Paróquia Santo Antônio,
+                        todas as quartas-feiras às 19h00.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="images/adoracao.jpg"
+                        alt="Adoração do Santíssimo"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                        Quinta-feira - Adoração do Santíssimo
+                      </h5>
+                      <p>
+                        Adoração do Santíssimo, seguido da Santa Missa, toda
+                        quinta-feira, na comunidade Menino Jesus de Praga, as
+                        19h30.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="images/coracao-de-jesus.jpg"
+                        alt="Apostolado"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                        Toda primeira sexta-feira do mês - Hora Santa com
+                        Apostolado Coração de Jesus
+                      </h5>
+                      <p>
+                        Toda primeira sexta-feira do mês, Hora Santa à partir
+                        das 18h00, seguido da Santa Missa, às 19h00
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="images/jesus-e-pequeninos.jpg"
+                        alt="Missa dos pequeninos"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                        Sábado - Missa dos pequeninos
+                      </h5>
+                      <p>
+                        Missa dedicada aos pequeninos, realizada na Paróquia
+                        Santo Antônio, aos sábados, às 18h00.
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100 img-fluid"
+                        src="images/santa-missa.jpg"
+                        alt="Santa Missa"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                        Domingo - Dia do Senhor - Santa Missa
+                      </h5>
+                      <p>
+                        Dia de louvar o Senhor. Dia de preceito. Santa Missa às
+                        09h00 e às 19h00.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="catequese-infantil">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="images/primeira-comunhao.jpg"
+                        alt="Primeira comunhão"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                        Primeira Comunhão
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vero, similique.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="crisma">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="images/crisma.jpg"
+                        alt="Crsima"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">Grupo de Crisma</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vero, similique.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section - Fale Conosco -->
+      <section id="fale-conosco" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-center">
+              Fale <span class="text-colored">conosco</span>
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-7 mb-5">
+              <form>
+                <div class="mb-3">
+                  <label for="nome" class="form-label fw-bold text-colored"
+                    >Seu nome</label
+                  >
+                  <input
+                    type="text"
+                    id="nome"
+                    class="form-control"
+                    name="nome"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label fw-bold text-colored"
+                    >Seu e-mail</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-control"
+                    name="email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="telefone" class="form-label fw-bold text-colored"
+                    >Seu telefone (Opcional)</label
+                  >
+                  <input type="tel" id="telefone" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label for="mensagem" class="form-label fw-bold text-colored"
+                    >Sua mensagem</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="mensagem"
+                    name="mensagem"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-more fw-bold">Enviar</button>
+              </form>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="col-md-5">
+              <div class="row">
+                <h3 class="section-title fs-3 text-colored mt-3">
+                  <i class="bi bi-hand-thumbs-up-fill"></i>
+                  Redes sociais
+                </h3>
+                <ul class="social-links">
+                  <li class="fs-5">
+                    <a
+                      href="https://www.facebook.com/paroquiasai/"
+                      target="_blank"
+                    >
+                      <i class="bi bi-facebook text-colored icons-social m-4"></i>
+                    </a>
+                  </li>
+                  <li class="fs-5 ms-1 me-1">
+                    <a
+                      href="https://www.instagram.com/paroquiasai/"
+                      target="_blank"
+                    >
+                      <i class="bi bi-instagram text-colored icons-social m-4"></i>
+                    </a>
+                  </li>
+                  <li class="fs-5">
+                    <a
+                      href="https://www.youtube.com/@paroquiasantoantonioitapir6639"
+                      target="_blank"
+                    >
+                      <i class="bi bi-youtube text-colored icons-social m-4"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="row mt-4">
+                <h3 class="section-title fs-3 text-colored">
+                  <i class="bi bi-cursor-fill"></i>
+                  Endereço
+                </h3>
+                <p>Rua Ribeiro de Barros, 272 - Centro | Itapira - SP</p>
+              </div>
+              <img
+                src="images/vaticano.jpeg"
+                alt="Bandeira do Vaticano"
+                class="m-3"
+              />
+              <img
+                src="images/amparo.png"
+                alt="Diocese de Amparo"
+                class="m-3"
+              />
+              <img
+                src="images/itapira.png"
+                alt="Bandeira de Itapira"
+                class="m-3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <div>
+        <footer>
+          <p>
+            Desenvolvido por
+            <a href="https://github.com/DiegoGervazoni" target="_blank"
+              >Diego A. Gervazoni | &copy; 2024</a
+            >
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <button
+      onclick="topFunction()"
+      id="myBtn"
+      title="Voltar para o topo"
+      style="display: block"
+    >
+      ↑
+    </button>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../build/scripts/jquery.mask.min.js"></script>
+    <script src="../build/scripts/jquery.validate.min.js"></script>
+    <script src="../build/scripts/messages_pt_BR.min.js"></script>
+    <script src="../build/scripts/main.js"></script>
+  </body>
+</html>

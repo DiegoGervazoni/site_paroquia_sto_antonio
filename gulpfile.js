@@ -48,5 +48,5 @@ exports.default = function () {
   gulp.watch("./source/styles/*.scss", gulp.series(compilaSass));
   gulp.watch("./source/scripts/*.js", gulp.series(comprimeJavaScript));
   gulp.watch("./source/images/*", gulp.series(comprimeImagens));
-  gulp.watch("./source/*.html", gulp.series(html)); // Adicione um watcher para arquivos HTML
+  gulp.watch("*.html", gulp.series(html)); // Adicione um watcher para arquivos HTML
 };
